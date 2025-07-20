@@ -1,6 +1,13 @@
 #include "binary_trees.h"
 
-binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tree_t *second)
+/**
+ * binary_trees_ancestor - Encuentra el ancestro común más bajo de dos nodos
+ * @first: Puntero al primer nodo
+ * @second: Puntero al segundo nodo
+ * Return: Puntero al ancestro común, o NULL si no hay
+ */
+binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
+									const binary_tree_t *second)
 {
 	const binary_tree_t *temp_first, *temp_second;
 
